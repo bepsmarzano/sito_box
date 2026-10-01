@@ -51,6 +51,7 @@ nav.links{display:flex;gap:24px;font-family:var(--f-display);font-weight:700;tex
 nav.links a{text-decoration:none;color:var(--on-dark-muted)}
 nav.links a:hover{color:var(--on-dark)}
 @media (max-width:860px){nav.links{display:none}}
+@media (max-width:480px){.brand small{display:none}}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--f-display);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1.02rem;text-decoration:none;border:0;border-radius:4px;padding:14px 22px;cursor:pointer;transition:transform .15s ease,filter .15s ease}
 .btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
@@ -73,7 +74,7 @@ nav.links a:hover{color:var(--on-dark)}
 /* PR board */
 .board{margin:0;background:var(--board);color:var(--board-ink);border-radius:4px;padding:24px 24px 18px;box-shadow:inset 0 0 0 9px #8c918a,0 24px 44px -22px rgba(0,0,0,.7);transform:rotate(-1.2deg);font-family:"Segoe Print","Bradley Hand","Comic Sans MS",var(--f-display);font-weight:700}
 .board .bd-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid currentColor;padding:6px 8px 8px;margin-bottom:12px;gap:10px}
-.board .bd-head strong{font-family:var(--f-display);font-size:1.9rem;font-weight:900;letter-spacing:.04em}
+.board .bd-head strong{white-space:nowrap;font-family:var(--f-display);font-size:1.9rem;font-weight:900;letter-spacing:.04em}
 .board .bd-head span{font-size:.85rem;font-weight:400}
 .board ul{list-style:none;margin:0;padding:0 8px;display:grid;gap:9px;font-size:1.05rem}
 .board li{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;border-bottom:1px dashed rgba(27,42,92,.25);padding-bottom:6px}
@@ -142,7 +143,7 @@ section{padding-block:80px}
 .map-load:hover span{color:var(--brand-deep)}
 
 /* recensioni */
-.ratings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:24px}
+.ratings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 @media (max-width:640px){.ratings{grid-template-columns:1fr}}
 .rating{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:16px;align-items:center;text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:18px 22px}
 .rating .score{grid-row:span 2;font-family:var(--f-display);font-weight:900;font-size:3rem;line-height:1;font-variant-numeric:tabular-nums}
@@ -380,11 +381,6 @@ footer strong{color:var(--on-dark)}
           <span class="where">Hit Club CrossFit · Prato<small>26 recensioni su Google</small></span>
         </a>
       </div>
-      <div class="quotes">
-        <figure class="quote"><blockquote><span class="todo">[Recensione 1, testo originale da Google]</span></blockquote><figcaption><span class="todo">[Nome]</span> · Firenze</figcaption></figure>
-        <figure class="quote"><blockquote><span class="todo">[Recensione 2, testo originale da Google]</span></blockquote><figcaption><span class="todo">[Nome]</span> · Prato</figcaption></figure>
-        <figure class="quote"><blockquote><span class="todo">[Recensione 3, testo originale da Google]</span></blockquote><figcaption><span class="todo">[Nome]</span> · Prato</figcaption></figure>
-      </div>
     </div>
   </section>
 
@@ -448,7 +444,7 @@ footer strong{color:var(--on-dark)}
         <details><summary>Non sono allenato. Il CrossFit fa per me?</summary><p>Sì. Partiamo dal tuo livello attuale e ogni workout ha una versione adatta a te. Il percorso individuale iniziale esiste proprio per questo.</p></details>
         <details><summary>Voglio solo rimettermi in forma. Va bene lo stesso?</summary><p>È uno degli obiettivi più comuni. Lo trasformiamo in traguardi concreti e misurabili, così vedi i progressi settimana dopo settimana.</p></details>
         <details><summary>Cosa devo portare al primo appuntamento?</summary><p>Abbigliamento sportivo, scarpe da allenamento, una borraccia e un asciugamano. Arriva qualche minuto prima dell'orario concordato.</p></details>
-        <details><summary>Sono già iscritto, dove prenoto le classi?</summary><p>Dall'<a href="https://cffirenze.shaggyowl.com/frame/palinsesto_completo/all" target="_blank" rel="noopener">area iscritti</a> o dall'app del box.</p></details>
+        <details><summary>Sono già iscritto, dove prenoto le classi?</summary><p>Dall'app del box.</p></details>
       </div>
     </div>
   </section>
